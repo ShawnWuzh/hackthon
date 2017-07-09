@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Cates</title>
+</head>
+<body>
+    {% for cate in cates %}
+        <ul>
+            <li><a href="{{ cate.category_url }}">{{ cate.title }}</a></li>
+        </ul>
+    {% endfor %}
+</body>
+</html>

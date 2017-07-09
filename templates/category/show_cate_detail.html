@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ cate.title }}</title>
+</head>
+<body>
+<strong>{{ cate.title }}</strong>
+<ul>
+    {% for play in play_list %}
+    <li>
+        {{ play.title }}
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

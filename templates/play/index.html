@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('{% static 'img/home.jpg' %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>Cartivity</h1>
+                    <hr class="small">
+                    <span class="subheading">Use Robots to Create Activity!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{#<!-- Main Content -->#}
+{#<div class="container">#}
+{#    <div class="row">#}
+{#        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">#}
+{#                {% include 'messages.html'%}#}
+{#            <form method="GET" action="">#}
+{#                <input type="text"  name="q" placeholder="Search Posts"/>#}
+{#                    <input  type="submit" value="search">#}
+{#            </form>#}
+{#            {% for obj in objects %}#}
+{#            <div class="post-preview">#}
+{#                <a href="{% url 'posts:detail' slug=obj.slug%}">#}
+{#                    <h2 class="post-title">#}
+{#                        {{ obj.title }}#}
+{#                    </h2>#}
+{#                    <h3 class="post-subtitle">#}
+{#                        {{ obj.get_markdown|truncatechars_html:50}}#}
+{#                    </h3>#}
+{#                </a>#}
+{#                <p class="post-meta">Posted by <a href="{% url 'posts:detail' slug=obj.slug%}">{{ obj.user.get_full_name}}#}
+{#                </a> on {{ obj.timestamp }}</p>#}
+{#            </div>#}
+{#            <hr>#}
+{#            {% endfor %}#}
+{#            <!-- Pager -->#}
+{#            <ul class="pager">#}
+{#                <li class="previous">#}
+{#                    {% if objects.has_previous %}#}
+{#                    <a href="?{{page_var}}={{ objects.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q}} {% endif %}">Newer#}
+{#                        Posts &larr;</a>#}
+{#                    {% endif %}#}
+{#                </li>#}
+{#                <li class="next">#}
+{#                    {% if objects.has_next %}#}
+{#                    <a href="?{{page_var}}={{ objects.next_page_number }}{% if request.GET.q %}&q={{request.GET.q}}{% endif %}">Older#}
+{#                        Posts &rarr;</a>#}
+{#                    {% endif %}#}
+{#                </li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+<hr>
+
+{% endblock content %}
